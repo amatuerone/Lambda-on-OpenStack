@@ -5,7 +5,7 @@ declare -i VM_ID=180
 MEMU=100
 MEMT=0
 ULIMIT=0.7
-LLIMIT=0.3
+LLIMIT=0.2
 HOST_IP=$(ip addr | grep 'eth0' | tail -n1 | awk '{print $2}' | cut -f1 -d'/')
 CLUSTER_ID=$HOST_IP:8500
 echo $CLUSTER_ID

@@ -13,6 +13,8 @@ MASTER=$HOST_IP":5001"
 
 KEY=$(cat setup.config | awk '{split($0,a,"="); if(a[1]=="KEY") print a[2]}')
 
+echo $KEY
+
 echo "Exceuting docker swarm"
 
 #create container
